@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f9;
+}
+
+/* --- Header & Navigation Styling --- */
+.site-header {
+    background-color: #795548; /* Brown */
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.site-nav {
+    background-color: #A1887F; /* Lighter Brown */
+    padding: 10px 0;
+}
+
+.site-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.site-nav li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 0.3s;
+}
+
+.site-nav li a:hover {
+    background-color: #8D6E63;
+}
+
+/* --- Main Content Styling --- */
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #4CAF50; /* Green */
+}
+
+
+.cat-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+}
+
+.breed-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.breed-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+    margin-top: 15px;
+}
+
+.spotlight-main {
+    text-align: center;
+}
+
+.breed-figure {
+    margin: 20px auto;
+    max-width: 600px;
+    border: 5px solid #4CAF50;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.breed-figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    padding: 15px;
+    background-color: #e8f5e9; 
+    font-style: italic;
+    color: #388E3C;
+}
+
+
+
+.site-footer {
+    background-color: #3E2723; 
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: relative; 
+    margin-top: 30px;
+}
+
+
+/*Tablet viewport*/
+@media (min-width: 768px) {
+    
+    .cat-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop Viewport*/
+@media (min-width: 1024px) {
+    
+    .cat-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .site-nav ul {
+        justify-content: flex-end;
+        padding-right: 20px;
+    }
+    .site-nav li {
+        margin-left: 20px;
+    }
+}
